@@ -9,19 +9,20 @@ import branchAutomation.Utils.BrowserUtils;
 
 public class LoginPageNav {
 	private static ResourceBundle config = ResourceBundle.getBundle("config");
-	private static final LoginPage loginPage = PageFactory.initElements(BrowserUtils.getDriver(), LoginPage.class);
-	
+	private static final LoginPage loginPage = PageFactory.initElements(
+			BrowserUtils.getDriver(), LoginPage.class);
+
 	public void navigate() {
 		BrowserUtils.loadURL(config.getString("url"));
 	}
-	
-	public void enterLogin(){
+
+	public void enterLogin() {
 		BrowserUtils.waitForElement(loginPage.UserName, 30);
 		loginPage.UserName.sendKeys(config.getString("userName"));
 		loginPage.Password.sendKeys(config.getString("password"));
 	}
-	
-	public void submitLogin(){
+
+	public void submitLogin() {
 		loginPage.LogIn.click();
 	}
 }

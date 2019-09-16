@@ -8,7 +8,11 @@ Scenario: android click tracker
 	And I click on Account Settings in Setup and Testing section
 	Then I should be on "/account-settings/profile"
 	And I get the branch key value
-	#When I make a POST request to "/v1/url"
+	When I make a POST request to "/v1/url"
+	Then I should see 200 success response and url in the body
+	When I click on Live View in Setup and Testing section
+	Then I should be on "/liveview/events"
+	And I should see the click entry in the Events tab
 	When I click on Quick Links in Channels and Link section
 	Then I should be on "/quick-links"
 	And I click on View Status using Action context

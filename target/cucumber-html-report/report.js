@@ -75,6 +75,56 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
+  "name": "I make a POST request to \"/v1/url\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefs.i_make_a_POST_request_to(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see 200 success response and url in the body",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefs.i_should_see_success_response_and_url_in_the_body(Integer)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I click on Live View in Setup and Testing section",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "StepDefs.i_click_on_Live_View_in_Setup_and_Testing_section()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should be on \"/liveview/events\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "StepDefs.i_should_be_on(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "I should see the click entry in the Events tab",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "StepDefs.i_should_see_the_click_entry_in_the_Events_tab()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
   "name": "I click on Quick Links in Channels and Link section",
   "keyword": "When "
 });
@@ -222,7 +272,7 @@ formatter.match({
   "location": "StepDefs.i_should_see_the_updated_android_click_count_in_the_stats()"
 });
 formatter.result({
-  "error_message": "java.lang.AssertionError: expected:\u003c7\u003e but was:\u003c6\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat branchAutomation.PageNav.DashboardPageNav.androidLinkClicks(DashboardPageNav.java:72)\r\n\tat branchAutomation.StepDefs.Runner.StepDefs.i_should_see_the_updated_android_click_count_in_the_stats(StepDefs.java:111)\r\n\tat ✽.I should see the updated android click count in the stats(file:src/test/resources/features/androidClick.feature:26)\r\n",
+  "error_message": "java.lang.AssertionError: expected:\u003c23\u003e but was:\u003c22\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:834)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat branchAutomation.PageNav.DashboardPageNav.androidLinkClicks(DashboardPageNav.java:77)\r\n\tat branchAutomation.StepDefs.Runner.StepDefs.i_should_see_the_updated_android_click_count_in_the_stats(StepDefs.java:116)\r\n\tat ✽.I should see the updated android click count in the stats(file:src/test/resources/features/androidClick.feature:30)\r\n",
   "status": "failed"
 });
 });

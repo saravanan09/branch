@@ -27,9 +27,6 @@ public class DashboardPage {
 	@FindBy(how = How.CSS, using = "table tbody[data-testid=smart-table-body] tr:nth-of-type(1) td:nth-of-type(3)")
     public WebElement EventPlatform;
 	
-	@FindBy(how = How.CSS, using = "table tbody[data-testid=smart-table-body] tr:nth-of-type(2) td:nth-of-type(3)")
-    public WebElement EventPlatformROBOT;
-	
 	@FindBy(how = How.CSS, using = "table[id='android-click-flow'] tbody tr:nth-of-type(3) td div")
     public WebElement AndroidClickCount;
 	
