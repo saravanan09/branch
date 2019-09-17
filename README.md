@@ -1,4 +1,4 @@
-# CheckoutPage_Automation
+# branch_Automation
 
 This automation was scripted on page object model custom framework with Java, Selenium and Rest Assured Framework and test was excecuted with cucumber BDD feature file. You will be able to execute the test, by importing into Eclipse IDE and run it from feature file or Runner class - RunnerTest.java.
 
