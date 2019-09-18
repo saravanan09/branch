@@ -4,8 +4,7 @@ This automation was scripted on page object model custom framework with Java, Se
 
 I have used maven dependencies for the libraries required and webdriver manager library for the the chrome driver.
 
-
-The folder structure is as follows,
+This workflow covers the validation of API response, status codes, URL check navigation between pages and validation of click on the page using assertion and handle dynamic web tables. The locators are identified with name, id, relative CSS and relative xpath. 
 
 The folder structure is as follows,
 - src/main/java
